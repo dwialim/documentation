@@ -1,0 +1,124 @@
+site_name: Documentation   # Judul utama dokumentasi (tampil di navbar dan tab browser)
+site_url: https://documentation.dwialim.web.id
+
+theme:
+  palette:                 # Konfigurasi tema light/dark mode
+    - media: "(prefers-color-scheme: light)"   # Mode terang (default)
+      scheme: default
+      toggle:              # Tombol switch theme
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    - media: "(prefers-color-scheme: dark)"    # Mode gelap
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+  name: material           # Tema yang digunakan (Material for MkDocs)
+  # name: readthedocs
+  icon:
+    annotation: material/chevron-right-circle  # Icon default untuk annotation/admonition
+  features:
+    - content.code.copy    # Tambahkan tombol "copy" di code block
+  language: en             # Bahasa UI (misalnya "en", "id")
+
+nav:                       # Struktur navigasi (menu sidebar/topbar)
+  - Home: &home index.md
+  # - Overview: &main overview.md
+  - Setup:
+    # - Overview: &setup setup/index.md
+    - Installation:
+      # - Overview: &installation setup/installation/index.md
+      - Grafana: &grafana_install setup/installation/grafana.md
+      - Prometheus: &prometheus_install setup/installation/prometheus.md
+    - Configuration:
+      # - Overview: &configuration setup/configuration/index.md
+      - grafana-config: &grafana_config setup/configuration/grafana.md
+      - prometheus-config: &prometheus_config setup/configuration/prometheus.md
+    - Start services:
+      # - Overview: &start_services setup/start-services/index.md
+      - Grafana: &grafana_service setup/start-services/grafana.md
+      - Prometheus: &prometheus_service setup/start-services/prometheus.md
+  - Get started:
+    # - Overview: &get_started get-started/index.md
+    - Grafana: &grafana_get_started get-started/grafana.md
+    # - prometheus-start: implementation/grafana.md
+
+markdown_extensions:       # Ekstensi tambahan untuk memperkaya Markdown
+
+  # --- Formatting umum ---
+  - admonition             # Blok catatan (!!! note, !!! warning, dll)
+  - tables                 # Dukungan tabel markdown
+  - def_list               # Definition list (:), mirip glossary
+  - attr_list              # Menambahkan atribut { } pada elemen markdown
+  - pymdownx.details       # Collapsible admonition/details
+  - pymdownx.critic        # Syntax critic markup (penambahan, penghapusan teks)
+  - pymdownx.caret         # Superscript ^teks^ dan insert ^^teks^^
+  - pymdownx.keys          # Menampilkan tombol keyboard (misalnya ++ctrl+c++)
+  - pymdownx.mark          # Highlight teks ==seperti ini==
+  - pymdownx.tilde         # Subscript ~teks~ dan strikethrough ~~teks~~
+  - pymdownx.emoji:        # Dukungan emoji
+      # emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+  # --- Code blocks ---
+  - pymdownx.highlight:    # Highlight code dengan pygments
+      anchor_linenums: false    # Nomor baris bisa diklik sebagai anchor
+      # linenums: false           # Tampilkan nomor baris di code block
+      auto_title: true          # Tambahkan judul otomatis berdasarkan bahasa
+      line_spans: __span        # Tambahkan span per baris (CSS styling)
+      pygments_lang_class: true # Tambahkan class bahasa untuk styling CSS
+  - pymdownx.extra
+  - pymdownx.inlinehilite   # Highlight code inline dengan `==teks==`
+  - pymdownx.snippets       # Menyertakan file/fragmen eksternal di code block
+  - pymdownx.superfences    # Multi-fence block (support tabbed code, nested)
+  - pymdownx.tabbed:        # Tab untuk code example multi-bahasa
+      alternate_style: true # Pakai style alternatif (lebih modern)
+
+  # --- Lists ---
+  - pymdownx.tasklist:      # Checklist [ ] [x]
+      custom_checkbox: true # Checkbox custom styled (bukan default browser)
+
+  - codehilite
+  - toc:
+      permalink: true
+
+plugins:
+  # - awesome-pages
+  - search                  # Plugin search default MkDocs
+  - macros                  # Plugin untuk pakai macro Jinja ({{ ... }}) di markdown
+  # - macros:
+  #     module_name: main.py
+
+  # - autorefs
+  # - htmlproofer: # Validasi link eksternal
+  #     validate_external_urls: true
+  # - link-checker: # Validasi internal links
+  #     local: true
+  # - autorefs:
+  #     resolve_closest: true
+
+extra_css:
+  - stylesheets/extra.css   # CSS custom tambahan (untuk styling sendiri)
+
+extra:
+  links:
+    home: *home
+    grafana_install: *grafana_install
+    grafana_config: *grafana_config
+    grafana_service: *grafana_service
+    grafana_get_started: *grafana_get_started
+
+    prometheus_install: *prometheus_install
+    prometheus_config: *prometheus_config
+    prometheus_service: *prometheus_service
+  # overviews:
+  #   main: *main
+  #   setup: *setup
+  #   installation: *installation
+  #   configuration: *configuration
+  #   start_services: *start_services
+  #   get_started: *get_started
+
