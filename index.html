@@ -10,6 +10,8 @@
       
       
       
+        <link rel="next" href="installation/grafana/">
+      
       
       <link rel="icon" href="assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
@@ -22,7 +24,16 @@
     
       <link rel="stylesheet" href="assets/stylesheets/main.7e37652d.min.css">
       
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
       
+      
+
+  
+  
+  
+  
+  <style>:root{--md-annotation-icon:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M22%2012a10%2010%200%200%201-10%2010A10%2010%200%200%201%202%2012%2010%2010%200%200%201%2012%202a10%2010%200%200%201%2010%2010m-12%206%206-6-6-6-1.4%201.4%204.6%204.6-4.6%204.6z%22/%3E%3C/svg%3E');}</style>
 
 
     
@@ -39,6 +50,8 @@
       
     
     
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -49,7 +62,14 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -58,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#dokumentasi-proyek" class="md-skip">
+        <a href="#project-documentation" class="md-skip">
           Skip to content
         </a>
       
@@ -94,12 +114,38 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Dokumentasi Proyek
+              Home
             
           </span>
         </div>
       </div>
     </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
     
     
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
@@ -187,6 +233,97 @@
       
   
   
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#kelebihan" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✨ Kelebihan
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ringkasan" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Ringkasan
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#struktur-dokumentasi" class="md-nav__link">
+    <span class="md-ellipsis">
+      📂 Struktur Dokumentasi
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
   
   
     
@@ -198,15 +335,15 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
-    Instalasi
+    Installation
     
   </span>
   
@@ -214,10 +351,10 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            Instalasi
+            Installation
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -228,7 +365,7 @@
   
   
     <li class="md-nav__item">
-      <a href="instalasi/grafana/" class="md-nav__link">
+      <a href="installation/grafana/" class="md-nav__link">
         
   
   
@@ -251,7 +388,7 @@
   
   
     <li class="md-nav__item">
-      <a href="instalasi/prometheus/" class="md-nav__link">
+      <a href="installation/prometheus/" class="md-nav__link">
         
   
   
@@ -289,15 +426,15 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
-    Setup
+    Configuration
     
   </span>
   
@@ -305,10 +442,10 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            Setup
+            Configuration
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -319,12 +456,103 @@
   
   
     <li class="md-nav__item">
-      <a href="setup/prometheus/" class="md-nav__link">
+      <a href="configuration/grafana/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Grafana
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="configuration/prometheus/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     Prometheus
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Implementation
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Implementation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="implementation/grafana/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Grafana
     
   </span>
   
@@ -369,114 +597,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#quick-start" class="md-nav__link">
+  <a href="#kelebihan" class="md-nav__link">
     <span class="md-ellipsis">
-      🚀 Quick Start
+      ✨ Kelebihan
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#dokumentasi" class="md-nav__link">
+  <a href="#ringkasan" class="md-nav__link">
     <span class="md-ellipsis">
-      📚 Dokumentasi
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="📚 Dokumentasi">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#panduan-pengguna" class="md-nav__link">
-    <span class="md-ellipsis">
-      Panduan Pengguna
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tutorial" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tutorial
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#referensi-api" class="md-nav__link">
-    <span class="md-ellipsis">
-      Referensi API
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pengembangan" class="md-nav__link">
-    <span class="md-ellipsis">
-      Pengembangan
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#fitur-utama" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔧 Fitur Utama
+      📊 Ringkasan
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#persyaratan-sistem" class="md-nav__link">
+  <a href="#struktur-dokumentasi" class="md-nav__link">
     <span class="md-ellipsis">
-      📋 Persyaratan Sistem
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dukungan" class="md-nav__link">
-    <span class="md-ellipsis">
-      🆘 Dukungan
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#changelog" class="md-nav__link">
-    <span class="md-ellipsis">
-      📈 Changelog
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lisensi" class="md-nav__link">
-    <span class="md-ellipsis">
-      📄 Lisensi
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#kontribusi" class="md-nav__link">
-    <span class="md-ellipsis">
-      🤝 Kontribusi
+      📂 Struktur Dokumentasi
     </span>
   </a>
   
@@ -498,74 +639,123 @@
 
 
 
-<h1 id="dokumentasi-proyek">Dokumentasi Proyek</h1>
-<p>Selamat datang di dokumentasi resmi proyek ini. Dokumentasi ini menyediakan panduan mulai dari instalasi, setup, dan cara penggunaan pada proyek.</p>
-<h2 id="quick-start">🚀 Quick Start</h2>
-<p>Untuk memulai dengan cepat:</p>
-<ol>
-<li><strong>Instalasi</strong>: Ikuti <a href="installation.md">Panduan Instalasi</a></li>
-<li><strong>Konfigurasi</strong>: Lihat <a href="configuration.md">Panduan Konfigurasi</a></li>
-<li><strong>Tutorial</strong>: Mulai dengan <a href="tutorials/basic-tutorial.md">Tutorial Dasar</a></li>
-</ol>
-<h2 id="dokumentasi">📚 Dokumentasi</h2>
-<h3 id="panduan-pengguna">Panduan Pengguna</h3>
-<ul>
-<li><a href="installation.md">Instalasi dan Setup</a></li>
-<li><a href="configuration.md">Konfigurasi</a></li>
-<li><a href="user-guide.md">Panduan Penggunaan</a></li>
-<li><a href="faq.md">FAQ</a></li>
-</ul>
-<h3 id="tutorial">Tutorial</h3>
-<ul>
-<li><a href="tutorials/basic-tutorial.md">Tutorial Dasar</a></li>
-<li><a href="tutorials/advanced-tutorial.md">Tutorial Lanjutan</a></li>
-<li><a href="tutorials/examples.md">Contoh Penggunaan</a></li>
-</ul>
-<h3 id="referensi-api">Referensi API</h3>
-<ul>
-<li><a href="api/overview.md">API Documentation</a></li>
-<li><a href="api/authentication.md">Authentication</a></li>
-<li><a href="api/endpoints.md">Endpoints</a></li>
-<li><a href="api/errors.md">Error Codes</a></li>
-</ul>
-<h3 id="pengembangan">Pengembangan</h3>
-<ul>
-<li><a href="contributing.md">Panduan Kontribusi</a></li>
-<li><a href="development.md">Development Setup</a></li>
-<li><a href="coding-standards.md">Coding Standards</a></li>
-<li><a href="testing.md">Testing</a></li>
-</ul>
-<h2 id="fitur-utama">🔧 Fitur Utama</h2>
-<ul>
-<li><strong>Performance Tinggi</strong>: Dioptimalkan untuk kinerja maksimal</li>
-<li><strong>Mudah Digunakan</strong>: Interface yang intuitif dan dokumentasi lengkap</li>
-<li><strong>Extensible</strong>: Mudah dikustomisasi dan diperluas</li>
-<li><strong>Cross-platform</strong>: Mendukung berbagai platform</li>
-</ul>
-<h2 id="persyaratan-sistem">📋 Persyaratan Sistem</h2>
-<ul>
-<li><strong>OS</strong>: Windows 10+, macOS 10.14+, Linux (Ubuntu 18.04+)</li>
-<li><strong>Memory</strong>: Minimal 4GB RAM</li>
-<li><strong>Storage</strong>: Minimal 1GB ruang kosong</li>
-<li><strong>Network</strong>: Koneksi internet untuk instalasi dependency</li>
-</ul>
-<h2 id="dukungan">🆘 Dukungan</h2>
-<p>Butuh bantuan? Ada beberapa cara untuk mendapatkan dukungan:</p>
-<ul>
-<li>📖 Baca <a href="faq.md">FAQ</a> untuk pertanyaan umum</li>
-<li>🐛 Laporkan bug di <a href="https://github.com/username/project/issues">Issues</a></li>
-<li>💬 Diskusi di <a href="https://community.example.com">Forum Komunitas</a></li>
-<li>📧 Email: support@example.com</li>
-</ul>
-<h2 id="changelog">📈 Changelog</h2>
-<p>Lihat <a href="changelog.md">CHANGELOG.md</a> untuk informasi tentang pembaruan terbaru dan perubahan versi.</p>
-<h2 id="lisensi">📄 Lisensi</h2>
-<p>Proyek ini dilisensikan di bawah <a href="license.md">MIT License</a>. Lihat file lisensi untuk detail lengkap.</p>
-<h2 id="kontribusi">🤝 Kontribusi</h2>
-<p>Kami menyambut kontribusi dari komunitas! Silakan baca <a href="contributing.md">Panduan Kontribusi</a> untuk informasi tentang cara berkontribusi pada proyek ini.</p>
+<!-- # Documentation
+
+Selamat datang di dokumentasi resmi proyek ini. Dokumentasi ini menyediakan panduan mulai dari instalasi, konfigurasi, dan cara penggunaan pada proyek.
+
+
+## 🔧 Fitur Utama
+
+- **Performance Tinggi**: Dioptimalkan untuk kinerja maksimal
+- **Mudah Digunakan**: Interface yang intuitif dan dokumentasi lengkap
+- **Extensible**: Mudah dikustomisasi dan diperluas
+- **Cross-platform**: Mendukung berbagai platform
+
+## 🚀 Quick Start
+
+Untuk memulai dengan cepat:
+
+1. **Instalasi**: Ikuti [Panduan Instalasi](installation.md)
+2. **Konfigurasi**: Lihat [Panduan Konfigurasi](configuration.md)
+3. **Tutorial**: Mulai dengan [Tutorial Dasar](tutorials/basic-tutorial.md)
+
+## 📚 Dokumentasi
+
+### Pengembangan
+- [Panduan Kontribusi](contributing.md)
+- [Development Setup](development.md)
+- [Coding Standards](coding-standards.md)
+- [Testing](testing.md)
+
+## 🔧 Fitur Utama
+
+- **Performance Tinggi**: Dioptimalkan untuk kinerja maksimal
+- **Mudah Digunakan**: Interface yang intuitif dan dokumentasi lengkap
+- **Extensible**: Mudah dikustomisasi dan diperluas
+- **Cross-platform**: Mendukung berbagai platform
+
+## 📋 Persyaratan Sistem
+
+- **OS**: Windows 10+, macOS 10.14+, Linux (Ubuntu 18.04+)
+- **Memory**: Minimal 4GB RAM
+- **Storage**: Minimal 1GB ruang kosong
+- **Network**: Koneksi internet untuk instalasi dependency
+
+## 🆘 Dukungan
+
+Butuh bantuan? Ada beberapa cara untuk mendapatkan dukungan:
+
+- 📖 Baca [FAQ](faq.md) untuk pertanyaan umum
+- 🐛 Laporkan bug di [Issues](https://github.com/username/project/issues)
+- 💬 Diskusi di [Forum Komunitas](https://community.example.com)
+- 📧 Email: support@example.com
+
+## 📈 Changelog
+
+Lihat [CHANGELOG.md](changelog.md) untuk informasi tentang pembaruan terbaru dan perubahan versi.
+
+## 📄 Lisensi
+
+Proyek ini dilisensikan di bawah [MIT License](license.md). Lihat file lisensi untuk detail lengkap.
+
+## 🤝 Kontribusi
+
+Kami menyambut kontribusi dari komunitas! Silakan baca [Panduan Kontribusi](contributing.md) untuk informasi tentang cara berkontribusi pada proyek ini.
+
+---
+
+**Catatan**: Dokumentasi ini terus diperbarui. Jika Anda menemukan informasi yang tidak akurat atau memiliki saran perbaikan, silakan [buat issue](https://github.com/username/project/issues/new) atau [kirim pull request](https://github.com/username/project/pulls).
+
+*Terakhir diperbarui: {{ date }}* -->
+
+<h1 id="project-documentation">📘 Project Documentation</h1>
+<!-- Selamat datang di dokumentasi resmi project ini.
+Dokumentasi ini berisi panduan lengkap mulai dari **instalasi**, **konfigurasi**, hingga **cara penggunaan**.
+Tujuannya agar pengguna dapat dengan mudah memahami alur setup dan memaksimalkan fitur yang tersedia. -->
+<p>Welcome to the official documentation for this project.
+This documentation contains guides, from <strong><mark>installation</mark></strong> and <strong><mark>configuration</mark></strong> to <strong><mark>usage</mark></strong>, compiled from various sources.
+The goal is to help users easily understand the setup process and maximize the available features.</p>
+<!-- ---
+
+## 🚀 Mulai Cepat
+
+Jika Anda ingin langsung mencoba, ikuti langkah berikut:
+
+1. [Instalasi](./instalasi/README.md)  
+   Panduan menyiapkan lingkungan, menginstal dependensi, dan menjalankan aplikasi pertama kali.
+
+2. [Konfigurasi](./konfigurasi/README.md)  
+   Cara mengatur parameter, environment, dan integrasi dengan layanan lain.
+
+3. [Cara Penggunaan](./penggunaan/README.md)  
+   Contoh penggunaan dasar hingga fitur lanjutan. -->
+
 <hr />
-<p><strong>Catatan</strong>: Dokumentasi ini terus diperbarui. Jika Anda menemukan informasi yang tidak akurat atau memiliki saran perbaikan, silakan <a href="https://github.com/username/project/issues/new">buat issue</a> atau <a href="https://github.com/username/project/pulls">kirim pull request</a>.</p>
-<p><em>Terakhir diperbarui: {{ date }}</em></p>
+<h2 id="kelebihan">✨ Kelebihan</h2>
+<p>Beberapa keunggulan dari project ini antara lain:</p>
+<ul>
+<li><strong>Mudah Digunakan</strong> – Instalasi dan konfigurasi sederhana dengan panduan yang jelas.  </li>
+<li><strong>Fleksibel</strong> – Mendukung berbagai environment (local, staging, production).  </li>
+<li><strong>Terukur</strong> – Dapat diintegrasikan dengan tool monitoring, CI/CD, dan logging.  </li>
+<li><strong>Dokumentasi Lengkap</strong> – Panduan step-by-step dari dasar hingga advanced.  </li>
+</ul>
+<hr />
+<h2 id="ringkasan">📊 Ringkasan</h2>
+<ul>
+<li>Dokumentasi ini dibagi menjadi beberapa bagian: <strong>Installation</strong>, <strong>Configuration</strong>, dan <strong>Implementation</strong>.</li>
+<li>Tiap bagian dilengkapi contoh nyata untuk mempermudah pemahaman.</li>
+<li>Disarankan membaca berurutan agar tidak ada step yang terlewat.</li>
+<li>Project ini cocok untuk pengguna pemula maupun tingkat lanjut.</li>
+</ul>
+<hr />
+<h2 id="struktur-dokumentasi">📂 Struktur Dokumentasi</h2>
+<div class="language-bash highlight"><span class="filename">Bash</span><pre><span></span><code><span id="__span-0-1">docs/
+</span><span id="__span-0-2">├─<span class="w"> </span>home.md<span class="w">          </span><span class="c1"># Main page</span>
+</span><span id="__span-0-3">├─<span class="w"> </span>installation/
+</span><span id="__span-0-4">├─<span class="w"> </span>configuration/
+</span><span id="__span-0-5">├─<span class="w"> </span>implementation/
+</span><span id="__span-0-6">└-<span class="w"> </span><span class="o">(</span>ongoing<span class="o">)</span>
+</span></code></pre></div>
 
 
 
@@ -614,7 +804,7 @@
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": ".", "features": ["content.code.copy"], "search": "assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="assets/javascripts/bundle.92b07e13.min.js"></script>
