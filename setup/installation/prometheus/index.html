@@ -8,24 +8,28 @@
       
       
       
-      
-        <link rel="prev" href="../../configuration/prometheus/">
-      
+        <link rel="canonical" href="http://127.0.0.1:8000/setup/installation/prometheus/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+        <link rel="prev" href="../grafana/">
+      
+      
+        <link rel="next" href="../../configuration/grafana/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
     
     
       
-        <title>Grafana - Documentation</title>
+        <title>Prometheus - Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e37652d.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,9 +54,9 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#start-the-grafana-server" class="md-skip">
+        <a href="#panduan-instalasi-prometheus" class="md-skip">
           Skip to content
         </a>
       
@@ -94,7 +98,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Documentation" class="md-header__button md-logo" aria-label="Documentation" data-md-component="logo">
+    <a href="../../.." title="Documentation" class="md-header__button md-logo" aria-label="Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -114,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Grafana
+              Prometheus
             
           </span>
         </div>
@@ -218,7 +222,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Documentation" class="md-nav__button md-logo" aria-label="Documentation" data-md-component="logo">
+    <a href="../../.." title="Documentation" class="md-nav__button md-logo" aria-label="Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -236,7 +240,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -255,21 +259,63 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Setup
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Setup
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
             
   
   
@@ -282,8 +328,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
             <span class="md-nav__icon md-icon"></span>
             Installation
           </label>
@@ -296,7 +342,201 @@
   
   
     <li class="md-nav__item">
-      <a href="../../installation/grafana/" class="md-nav__link">
+      <a href="../grafana/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Grafana
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Prometheus
+    
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Configuration
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Configuration
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration/grafana/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    grafana-config
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration/prometheus/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    prometheus-config
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Start services
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Start services
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../start-services/grafana/" class="md-nav__link">
         
   
   
@@ -319,7 +559,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../installation/prometheus/" class="md-nav__link">
+      <a href="../../start-services/prometheus/" class="md-nav__link">
         
   
   
@@ -330,6 +570,14 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -365,7 +613,7 @@
   
   
   <span class="md-ellipsis">
-    Configuration
+    Get started
     
   </span>
   
@@ -376,7 +624,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            Configuration
+            Get started
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -387,7 +635,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../configuration/grafana/" class="md-nav__link">
+      <a href="../../../get-started/grafana/" class="md-nav__link">
         
   
   
@@ -398,210 +646,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../configuration/prometheus/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Prometheus
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Implementation
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            Implementation
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Grafana
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    Grafana
-    
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#linux" class="md-nav__link">
-    <span class="md-ellipsis">
-      Linux
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Linux">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#start-the-grafana-server-with-systemd" class="md-nav__link">
-    <span class="md-ellipsis">
-      Start the Grafana server with systemd
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#configure-the-grafana-server-to-start-at-boot-using-systemd" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configure the Grafana server to start at boot using systemd
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#restart-the-grafana-server-using-systemd" class="md-nav__link">
-    <span class="md-ellipsis">
-      Restart the Grafana server using systemd
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#start-the-grafana-server-using-initd" class="md-nav__link">
-    <span class="md-ellipsis">
-      Start the Grafana server using init.d
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#configure-the-grafana-server-to-start-at-boot-using-initd" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configure the Grafana server to start at boot using init.d
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#start-the-server-using-the-binary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Start the server using the binary
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -634,83 +678,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#linux" class="md-nav__link">
-    <span class="md-ellipsis">
-      Linux
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Linux">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#start-the-grafana-server-with-systemd" class="md-nav__link">
-    <span class="md-ellipsis">
-      Start the Grafana server with systemd
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#configure-the-grafana-server-to-start-at-boot-using-systemd" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configure the Grafana server to start at boot using systemd
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#restart-the-grafana-server-using-systemd" class="md-nav__link">
-    <span class="md-ellipsis">
-      Restart the Grafana server using systemd
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#start-the-grafana-server-using-initd" class="md-nav__link">
-    <span class="md-ellipsis">
-      Start the Grafana server using init.d
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#configure-the-grafana-server-to-start-at-boot-using-initd" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configure the Grafana server to start at boot using init.d
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#start-the-server-using-the-binary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Start the server using the binary
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -725,52 +692,7 @@
 
 
 
-<h1 id="start-the-grafana-server">Start the Grafana server</h1>
-<p><small>Topik ini berisi petunjuk untuk memulai server Grafana. Untuk perubahan konfigurasi tertentu, Anda mungkin perlu memulai ulang server Grafana agar perubahan tersebut berlaku.</p>
-<p>Petunjuk berikut memulai proses <code>grafana-server</code> sebagai pengguna <code>grafana</code>, yang dibuat selama instalasi paket.</p>
-<p>Jika Anda menginstal dengan APT repository atau <code>.deb</code> package, Anda dapat menjalankan server menggunakan systemd atau init.d. Jika Anda menginstal berkas biner <code>.tar.gz</code>, jalankan berkas biner tersebut.</small></p>
-<!-- <span style='font-size: 32px;'>Topik ini berisi petunjuk untuk memulai</span><br>
-<span style='font-size: 24px;'>Topik ini berisi petunjuk untuk memulai</span><br>
-<span style='font-size: 18.72px;'>Topik ini berisi petunjuk untuk memulai</span><br>
-<span style='font-size: 16px;'>Topik ini berisi petunjuk untuk memulai</span><br>
-<span style='font-size: 13.28px;'>Topik ini berisi petunjuk untuk memulai</span><br>
-<span style='font-size: 10.72px;'>Topik ini berisi petunjuk untuk memulai</span><br>
-<small>Topik ini berisi petunjuk untuk memulai</small> -->
-
-<h2 id="linux">Linux</h2>
-<p><span style='font-size: 13.28px;'>Sub-bagian berikut menjelaskan tiga metode untuk memulai dan memulai ulang server Grafana: dengan systemd, initd, atau dengan langsung menjalankan binernya. Anda hanya perlu mengikuti satu set instruksi, tergantung pada konfigurasi mesin Anda.</span></p>
-<h3 id="start-the-grafana-server-with-systemd">Start the Grafana server with systemd</h3>
-<p><span style='font-size: 13.28px;'>Selesaikan langkah-langkah berikut untuk memulai server Grafana menggunakan systemd dan verifikasi bahwa server tersebut berjalan.</span></p>
-<ol>
-<li>Untuk memulai service, jalankan perintah berikut:
-<div class="language-bash highlight"><span class="filename">Bash</span><pre><span></span><code><span id="__span-0-1">sudo<span class="w"> </span>systemctl<span class="w"> </span>daemon-reload
-</span><span id="__span-0-2">sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>grafana-server
-</span></code></pre></div></li>
-<li>Untuk memverifikasi bahwa service berjalan, jalankan perintah berikut:
-<div class="language-bash highlight"><span class="filename">Bash</span><pre><span></span><code><span id="__span-1-1">sudo<span class="w"> </span>systemctl<span class="w"> </span>status<span class="w"> </span>grafana-server
-</span></code></pre></div></li>
-</ol>
-<h3 id="configure-the-grafana-server-to-start-at-boot-using-systemd">Configure the Grafana server to start at boot using systemd</h3>
-<p><small>Untuk konfigurasi server Grafana agar mulai saat boot, jalankan perintah berikut:</small>
-<div class="language-bash highlight"><span class="filename">Bash</span><pre><span></span><code><span id="__span-2-1">sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>grafana-server.service
-</span></code></pre></div></p>
-<p><strong><em>Serve Grafana on a port &lt; 1024</em></strong></br>
-<small>Jika Anda menggunakan <code>systemd</code> dan ingin memulai Grafana pada port yang lebih rendah dari 1024 Anda harus menambahkan penggantian unit <code>systemd</code>.</small></p>
-<ol>
-<li><small>Jalankan perintah berikut untuk membuat berkas pengganti di editor yang Anda konfigurasikan.</small>
-<div class="language-bash highlight"><span class="filename">Bash</span><pre><span></span><code><span id="__span-3-1"><span class="c1"># Alternatively, create a file in /etc/systemd/system/grafana-server.service.d/override.conf</span>
-</span><span id="__span-3-2">sudo<span class="w"> </span>systemctl<span class="w"> </span>edit<span class="w"> </span>grafana-server.service
-</span></code></pre></div>
-<div class="language-bash highlight"><span class="filename">Bash</span><pre><span></span><code><span id="__span-4-1"><span class="c1"># Alternatively, create a file in /etc/systemd/system/grafana-server.service.d/override.conf</span>
-</span><span id="__span-4-2">sudo<span class="w"> </span>systemctl<span class="w"> </span>edit<span class="w"> </span>grafana-server.service
-</span></code></pre></div></li>
-<li><small>Tambahkan pengaturan tambahan berikut untuk memberikan kemampuan <code>CAP_NET_BIND_SERVICE</code></small>.</br>
-<small>To learn more about capabilities, refer to <a href="https://man7.org/linux/man-pages/man7/capabilities.7.html">capabilities(7) — Linux manual page</a>.</small></li>
-</ol>
-<h3 id="restart-the-grafana-server-using-systemd">Restart the Grafana server using systemd</h3>
-<h3 id="start-the-grafana-server-using-initd">Start the Grafana server using init.d</h3>
-<h3 id="configure-the-grafana-server-to-start-at-boot-using-initd">Configure the Grafana server to start at boot using init.d</h3>
-<h3 id="start-the-server-using-the-binary">Start the server using the binary</h3>
+<h1 id="panduan-instalasi-prometheus">Panduan Instalasi Prometheus<a class="headerlink" href="#panduan-instalasi-prometheus" title="Permanent link">&para;</a></h1>
 
 
 
@@ -819,10 +741,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.92b07e13.min.js"></script>
       
     
   </body>
