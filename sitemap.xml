@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>http://127.0.0.1:8000/</loc>
+         <loc>https://dwialim.github.io/documentation/</loc>
          <lastmod>2025-09-03</lastmod>
     </url>
     <url>
-         <loc>http://127.0.0.1:8000/overview/</loc>
+         <loc>https://dwialim.github.io/documentation/overview/</loc>
          <lastmod>2025-09-03</lastmod>
     </url>
     <url>
-         <loc>http://127.0.0.1:8000/get-started/grafana/</loc>
+         <loc>https://dwialim.github.io/documentation/get-started/grafana/</loc>
          <lastmod>2025-09-03</lastmod>
     </url>
     <url>
-         <loc>http://127.0.0.1:8000/setup/overview/</loc>
+         <loc>https://dwialim.github.io/documentation/setup/overview/</loc>
          <lastmod>2025-09-03</lastmod>
     </url>
     <url>
-         <loc>http://127.0.0.1:8000/setup/configuration/grafana/</loc>
+         <loc>https://dwialim.github.io/documentation/setup/configuration/grafana/</loc>
          <lastmod>2025-09-03</lastmod>
     </url>
     <url>
-         <loc>http://127.0.0.1:8000/setup/configuration/prometheus/</loc>
+         <loc>https://dwialim.github.io/documentation/setup/configuration/prometheus/</loc>
          <lastmod>2025-09-03</lastmod>
     </url>
     <url>
-         <loc>http://127.0.0.1:8000/setup/installation/grafana/</loc>
+         <loc>https://dwialim.github.io/documentation/setup/installation/grafana/</loc>
          <lastmod>2025-09-03</lastmod>
     </url>
     <url>
-         <loc>http://127.0.0.1:8000/setup/installation/overview/</loc>
+         <loc>https://dwialim.github.io/documentation/setup/installation/overview/</loc>
          <lastmod>2025-09-03</lastmod>
     </url>
     <url>
-         <loc>http://127.0.0.1:8000/setup/installation/prometheus/</loc>
+         <loc>https://dwialim.github.io/documentation/setup/installation/prometheus/</loc>
          <lastmod>2025-09-03</lastmod>
     </url>
     <url>
-         <loc>http://127.0.0.1:8000/setup/start-services/grafana/</loc>
+         <loc>https://dwialim.github.io/documentation/setup/start-services/grafana/</loc>
          <lastmod>2025-09-03</lastmod>
     </url>
     <url>
-         <loc>http://127.0.0.1:8000/setup/start-services/prometheus/</loc>
+         <loc>https://dwialim.github.io/documentation/setup/start-services/prometheus/</loc>
          <lastmod>2025-09-03</lastmod>
     </url>
 </urlset>
