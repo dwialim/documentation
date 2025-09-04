@@ -5,13 +5,13 @@
       
       
       
-        <link rel="canonical" href="https://documentation.dwialim.web.id/setup/installation/prometheus/">
+        <link rel="canonical" href="https://documentation.dwialim.web.id/setup/installation/node-exporter/">
       
       
-        <link rel="prev" href="../grafana/">
+        <link rel="prev" href="../prometheus/">
       
       
-        <link rel="next" href="../node-exporter/">
+        <link rel="next" href="../../configuration/authentikasi-prometheus/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -19,7 +19,7 @@
     
     
       
-        <title>Prometheus - Documentation</title>
+        <title>Node Exporter - Documentation</title>
       
     
     
@@ -89,7 +89,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#panduan-install-prometheus" class="md-skip">
+        <a href="#panduan-install-node-exporter" class="md-skip">
           Skip to content
         </a>
       
@@ -125,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Prometheus
+              Node Exporter
             
           </span>
         </div>
@@ -369,6 +369,29 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../prometheus/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Prometheus
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -386,7 +409,7 @@
   
   
   <span class="md-ellipsis">
-    Prometheus
+    Node Exporter
     
   </span>
   
@@ -399,7 +422,7 @@
   
   
   <span class="md-ellipsis">
-    Prometheus
+    Node Exporter
     
   </span>
   
@@ -422,45 +445,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#apa-itu-prometheus" class="md-nav__link">
+  <a href="#apa-itu-node-exporter" class="md-nav__link">
     <span class="md-ellipsis">
-      Apa itu Prometheus?
+      Apa itu Node Exporter?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#fungsi-prometheus" class="md-nav__link">
+  <a href="#fungsi-node-exporter" class="md-nav__link">
     <span class="md-ellipsis">
-      Fungsi Prometheus
+      Fungsi Node Exporter
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#cara-kerja-prometheus" class="md-nav__link">
+  <a href="#cara-kerja-node-exporter" class="md-nav__link">
     <span class="md-ellipsis">
-      Cara Kerja Prometheus
+      Cara Kerja Node Exporter
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#mempersiapkan-server" class="md-nav__link">
+  <a href="#install-node-exporter" class="md-nav__link">
     <span class="md-ellipsis">
-      Mempersiapkan server
+      Install Node Exporter
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#install-prometheus" class="md-nav__link">
+  <a href="#menghubungkan-node-exporter-ke-prometheus" class="md-nav__link">
     <span class="md-ellipsis">
-      Install Prometheus
+      Menghubungkan Node Exporter ke Prometheus
     </span>
   </a>
   
@@ -470,29 +493,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../node-exporter/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Node Exporter
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -907,45 +907,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#apa-itu-prometheus" class="md-nav__link">
+  <a href="#apa-itu-node-exporter" class="md-nav__link">
     <span class="md-ellipsis">
-      Apa itu Prometheus?
+      Apa itu Node Exporter?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#fungsi-prometheus" class="md-nav__link">
+  <a href="#fungsi-node-exporter" class="md-nav__link">
     <span class="md-ellipsis">
-      Fungsi Prometheus
+      Fungsi Node Exporter
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#cara-kerja-prometheus" class="md-nav__link">
+  <a href="#cara-kerja-node-exporter" class="md-nav__link">
     <span class="md-ellipsis">
-      Cara Kerja Prometheus
+      Cara Kerja Node Exporter
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#mempersiapkan-server" class="md-nav__link">
+  <a href="#install-node-exporter" class="md-nav__link">
     <span class="md-ellipsis">
-      Mempersiapkan server
+      Install Node Exporter
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#install-prometheus" class="md-nav__link">
+  <a href="#menghubungkan-node-exporter-ke-prometheus" class="md-nav__link">
     <span class="md-ellipsis">
-      Install Prometheus
+      Menghubungkan Node Exporter ke Prometheus
     </span>
   </a>
   
@@ -967,118 +967,97 @@
 
 
 
-<h1 id="panduan-install-prometheus">Panduan Install Prometheus<a class="headerlink" href="#panduan-install-prometheus" title="Permanent link">¶</a></h1>
-<h2 id="apa-itu-prometheus">Apa itu Prometheus?<a class="headerlink" href="#apa-itu-prometheus" title="Permanent link">¶</a></h2>
-<p><small><strong>Prometheus</strong> adalah open-source monitoring &amp; alerting toolkit yang awalnya dibuat oleh SoundCloud, sekarang dikelola oleh <strong>CNCF (Cloud Native Computing Foundation)</strong>.</small></p><small>
-</small><p><small>Prometheus banyak dipakai di dunia <strong>cloud-native, DevOps, Kubernetes</strong> untuk mengumpulkan metrik, menyimpannya, lalu membuat query/alert.</small></p>
-<h2 id="fungsi-prometheus">Fungsi Prometheus<a class="headerlink" href="#fungsi-prometheus" title="Permanent link">¶</a></h2>
-<p><small><strong>Mengumpulkan metrik</strong> dari aplikasi, server, container, database, dsb.</small>
-<small><strong>Menyimpan data</strong> dalam bentuk time-series (berdasarkan timestamp).</small>
-<small><strong>Query data</strong> dengan bahasa khusus bernama PromQL.</small>
-<small><strong>Membuat alert</strong> (via Alertmanager) kalau ada kondisi tertentu (misalnya CPU &gt; 80%).</small>
-<small>Bisa diintegrasikan dengan <strong>Grafana</strong> untuk visualisasi.</small></p>
-<h2 id="cara-kerja-prometheus">Cara Kerja Prometheus<a class="headerlink" href="#cara-kerja-prometheus" title="Permanent link">¶</a></h2>
+<h1 id="panduan-install-node-exporter">Panduan Install Node Exporter<a class="headerlink" href="#panduan-install-node-exporter" title="Permanent link">¶</a></h1>
+<h2 id="apa-itu-node-exporter">Apa itu Node Exporter?<a class="headerlink" href="#apa-itu-node-exporter" title="Permanent link">¶</a></h2>
+<p><small>
+Node Exporter adalah <strong>agen monitoring</strong> yang digunakan untuk mengumpulkan metrics hardware dan sistem operasi. Prometheus sendiri hanya bertindak sebagai <strong>server monitoring</strong> dan tidak bisa langsung mengumpulkan data dari sistem. Node Exporter lah yang akan mengumpulkan data, lalu Prometheus akan menarik (scrape) data tersebut. data metriks yang dikumpulkan seperti: CPU usage, Memori (RAM), Disk usage, Load average, Network traffic, Proses yang berjalan</small></p>
+<h2 id="fungsi-node-exporter">Fungsi Node Exporter<a class="headerlink" href="#fungsi-node-exporter" title="Permanent link">¶</a></h2>
+<p><small>
+Node Exporter meng-<strong>expose</strong> berbagai metrics terkait host (server) dalam format HTTP endpoint (<code>:9100/metrics</code>), supaya Prometheus bisa <strong>scrape</strong> data tersebut secara periodik.</small></p>
+<h2 id="cara-kerja-node-exporter">Cara Kerja Node Exporter<a class="headerlink" href="#cara-kerja-node-exporter" title="Permanent link">¶</a></h2>
 <ol>
-<li><small><strong>Scraping</strong> → Prometheus secara aktif menarik (pull) data dari endpoint HTTP yang expose /metrics.</small></li>
-<li><small><strong>Time-series DB</strong> → Data disimpan berdasarkan label (contoh: cpu_usage{instance="server1"}).</small></li>
-<li><small><strong>Query</strong> → Kita bisa jalankan query PromQL untuk analisis atau visualisasi.</small></li>
-<li><small><strong>Alerting</strong> → Jika kondisi match (misalnya disk_usage &gt; 90%), alert dikirim ke Alertmanager → lalu diteruskan ke email, Slack, PagerDuty, dll.</small></li>
+<li><small>Install Node Exporter di server target (Linux biasanya).</small></li>
+<li><small>Node Exporter jalan sebagai service dan expose metrics di port <code>9100</code>.</small></li>
+<li><small>Prometheus melakukan scrape ke <code>http://&lt;server_ip&gt;:9100/metrics</code>.</small></li>
+<li><small>Data disimpan Prometheus dan bisa divisualisasikan di Grafana.</small></li>
 </ol>
-<h2 id="mempersiapkan-server">Mempersiapkan server<a class="headerlink" href="#mempersiapkan-server" title="Permanent link">¶</a></h2>
-<p><small>
-Sebelum menginstal aplikasi atau perangkat lunak pada server, ada beberapa langkah penting yang harus dilakukan. Pertama, <strong>update</strong> untuk memastikan daftar paket terbaru tersedia di sistem. Selanjutnya, <strong>upgrade</strong> package yang sudah terinstal ke versi termutakhir guna memperbaiki celah keamanan dan bug. Selain itu, atur zona waktu server/VPS sesuai dengan lokasi pengguna agar catatan log server mudah dipantau dan tugas penjadwalan otomatis (<strong>cron</strong>) dapat berjalan sesuai waktu yang diharapkan.</small>
-</p><div class="language-bash highlight"><span class="filename">Bash</span><pre><span></span><code><span id="__span-0-1">sudo<span class="w"> </span>apt<span class="w"> </span>update
-</span><span id="__span-0-2">sudo<span class="w"> </span>apt<span class="w"> </span>upgrade<span class="w"> </span>-y
+<h2 id="install-node-exporter">Install Node Exporter<a class="headerlink" href="#install-node-exporter" title="Permanent link">¶</a></h2>
+<p><small>Sama seperti prometheus, Kita akan menginstall Node Exporter dari <a href="https://prometheus.io/download/#node_exporter">Pre-Compile Binary</a> yang sudah disediakan.</small>
+</p><div class="language-bash highlight"><span class="filename">Bash</span><pre><span></span><code><span id="__span-0-1"><span class="nb">cd</span><span class="w"> </span>/tmp
+</span><span id="__span-0-2">
+</span><span id="__span-0-3">wget<span class="w"> </span>https://github.com/prometheus/node_exporter/releases/download/v1.9.1/node_exporter-1.9.1.linux-amd64.tar.gz
+</span><span id="__span-0-4">
+</span><span id="__span-0-5">tar<span class="w"> </span>-xvzf<span class="w"> </span>node_exporter-*.*-amd64.tar.gz
+</span><span id="__span-0-6"><span class="nb">cd</span><span class="w"> </span>node_exporter-*.*-amd64
 </span></code></pre></div>
-<small>Atur juga timezone server dan sesuaikan dengan daerah tempat tinggal Anda. disini saya mengatur timezone server ke Asia/Jakarta.</small>
-<div class="language-bash highlight"><span class="filename">Bash</span><pre><span></span><code><span id="__span-1-1">sudo<span class="w"> </span>timedatectl<span class="w"> </span>set-timezone<span class="w"> </span>Asia/Jakarta
+<small>
+Kemudian pindahkan binari node exporter ke <code>/usr/local/bin</code>. Dan agar lebih aman, buat juga user dan group yang akan digunakan untuk menjalankan <strong>Node Exporter</strong>. Terakhir ubah kepemilikan direktorinya.</small>
+<div class="language-bash highlight"><span class="filename">Bash</span><pre><span></span><code><span id="__span-1-1">sudo<span class="w"> </span>useradd<span class="w"> </span>-rs<span class="w"> </span>/bin/false<span class="w"> </span>node_exporter
+</span><span id="__span-1-2">
+</span><span id="__span-1-3">sudo<span class="w"> </span>mv<span class="w"> </span>node_exporter<span class="w"> </span>/usr/local/bin/
+</span><span id="__span-1-4">sudo<span class="w"> </span>chown<span class="w"> </span>node_exporter:node_exporter<span class="w"> </span>/usr/local/bin/node_exporter
 </span></code></pre></div><p></p>
-<h2 id="install-prometheus">Install Prometheus<a class="headerlink" href="#install-prometheus" title="Permanent link">¶</a></h2>
-<p><small>
-Ada beberapa cara untuk menginstall prometheus, diantaranya dengan <strong>Pre-Compiled Binary, APT Paket, Build From Fource, dan Docker Image</strong>. Tapi pada tutorial kali ini Kita akan menginstall prometheus dengan metode <strong>Pre-Compile Binary</strong>. yaitu dengan mengunduh <strong>biner yang sudah dicompile</strong> langsung dari situs resmi Prometheus. Karena cara ini cocok untuk pengguna yang ingin langsung menggunakan Prometheus tanpa perlu melakukan <em>compile</em> sendiri.</small></p><small>
-</small><p><small><a href="https://prometheus.io/download/">Pre-Compiled Binary</a></small>
-</p><div class="language-bash highlight"><span class="filename">Bash</span><pre><span></span><code><span id="__span-2-1">sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>wget<span class="w"> </span>tar
-</span><span id="__span-2-2"><span class="nb">cd</span><span class="w"> </span>/tmp
-</span><span id="__span-2-3">
-</span><span id="__span-2-4">wget<span class="w"> </span>https://github.com/prometheus/prometheus/releases/download/v3.5.0/prometheus-3.5.0.linux-amd64.tar.gz
-</span><span id="__span-2-5">
-</span><span id="__span-2-6">tar<span class="w"> </span>-xvzf<span class="w"> </span>prometheus-3.5.0.linux-amd64.tar.gz
-</span><span id="__span-2-7"><span class="nb">cd</span><span class="w"> </span>prometheus-3.5.0.linux-amd64
-</span></code></pre></div>
-<small><em>Perintah di atas akan masuk ke direktori /tmp dan mengunduh prometheus versi v3.5.0</em></small><p></p>
-<p><small>Buat user dan group untuk menjalankan prometheus, buat juga direktori untuk menyimpan binari dan file konfigurasi prometheus.</small>
-</p><div class="language-bash highlight"><span class="filename">Bash</span><pre><span></span><code><span id="__span-3-1">sudo<span class="w"> </span>useradd<span class="w"> </span>--no-create-home<span class="w"> </span>--shell<span class="w"> </span>/bin/false<span class="w"> </span>prometheus
-</span><span id="__span-3-2">
-</span><span id="__span-3-3">sudo<span class="w"> </span>mkdir<span class="w"> </span>/etc/prometheus
-</span><span id="__span-3-4">sudo<span class="w"> </span>mkdir<span class="w"> </span>/var/lib/prometheus
-</span></code></pre></div><p></p>
-<p><small>Pindahkan file binari dan file konfigurasi prometheus ke direktori /var/lib dan /etc.</small>
-</p><div class="language-bash highlight"><span class="filename">Bash</span><pre><span></span><code><span id="__span-4-1">sudo<span class="w"> </span>mv<span class="w"> </span>prometheus.yml<span class="w"> </span>/etc/prometheus/
-</span><span id="__span-4-2">sudo<span class="w"> </span>mv<span class="w"> </span>prometheus<span class="w"> </span>/usr/local/bin/
-</span><span id="__span-4-3">sudo<span class="w"> </span>mv<span class="w"> </span>promtool<span class="w"> </span>/usr/local/bin/
-</span></code></pre></div><p></p>
-<p><small>Ubah kepemilikan direktori <code>/etc/prometheus</code>, <code>/usr/bin/prometheus</code>, dan <code>/var/lib/prometheus</code> agar bisa diakses oleh user prometheus.</small>
-</p><div class="language-bash highlight"><span class="filename">Bash</span><pre><span></span><code><span id="__span-5-1">sudo<span class="w"> </span>chown<span class="w"> </span>-R<span class="w"> </span>prometheus:prometheus<span class="w"> </span>/etc/prometheus
-</span><span id="__span-5-2">sudo<span class="w"> </span>chown<span class="w"> </span>-R<span class="w"> </span>prometheus:prometheus<span class="w"> </span>/var/lib/prometheus
-</span><span id="__span-5-3">sudo<span class="w"> </span>chown<span class="w"> </span>prometheus:prometheus<span class="w"> </span>/usr/local/bin/prometheus
-</span><span id="__span-5-4">sudo<span class="w"> </span>chown<span class="w"> </span>prometheus:prometheus<span class="w"> </span>/usr/local/bin/promtool
-</span></code></pre></div><p></p>
-<ul>
-<li><strong>/etc/prometheus</strong>: Tempat menyimpan file konfigurasi prometheus.</li>
-<li><strong>/usr/local/bin/prometheus</strong>: Lokasi file executable prometheus</li>
-<li><strong>/var/lib/prometheus</strong>: Tempat penyimpanan data prometheus yang berubah-ubah.</li>
-</ul>
-<p><small>Terakhir buat konfigurasi systemd agar prometheus berjalan sebagai service di VPS atau Server..</small>
-</p><div class="language-bash highlight"><span class="filename">Bash</span><pre><span></span><code><span id="__span-6-1">sudo<span class="w"> </span>nano<span class="w"> </span>/etc/systemd/system/prometheus.service
+<p><small>Buat konfigurasi node exporter di Systemd. Ini bertujuan agar node exporter berjalan sebagai service.</small>
+</p><div class="language-bash highlight"><span class="filename">Bash</span><pre><span></span><code><span id="__span-2-1">sudo<span class="w"> </span>nano<span class="w"> </span>/etc/systemd/system/node_exporter.service
 </span></code></pre></div><p></p>
 <p><small>Salin dan tempel baris kode di bawah ini:</small>
-</p><div class="language-bash highlight"><span class="filename">Bash</span><pre><span></span><code><span id="__span-7-1"><span class="o">[</span>Unit<span class="o">]</span>
-</span><span id="__span-7-2"><span class="nv">Description</span><span class="o">=</span>Prometheus
-</span><span id="__span-7-3"><span class="nv">Documentation</span><span class="o">=</span>https://prometheus.io/docs/introduction/overview
-</span><span id="__span-7-4"><span class="nv">Wants</span><span class="o">=</span>network-online.target
-</span><span id="__span-7-5"><span class="nv">After</span><span class="o">=</span>network-online.target
-</span><span id="__span-7-6">
-</span><span id="__span-7-7"><span class="o">[</span>Service<span class="o">]</span>
-</span><span id="__span-7-8"><span class="nv">User</span><span class="o">=</span>prometheus
-</span><span id="__span-7-9"><span class="nv">Group</span><span class="o">=</span>prometheus
-</span><span id="__span-7-10"><span class="nv">Type</span><span class="o">=</span>simple
-</span><span id="__span-7-11"><span class="nv">ExecStart</span><span class="o">=</span>/usr/local/bin/prometheus<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-7-12"><span class="w">    </span>--config.file<span class="w"> </span>/etc/prometheus/prometheus.yml<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-7-13"><span class="w">    </span>--storage.tsdb.path<span class="w"> </span>/var/lib/prometheus<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-7-14">
-</span><span id="__span-7-15"><span class="o">[</span>Install<span class="o">]</span>
-</span><span id="__span-7-16"><span class="nv">WantedBy</span><span class="o">=</span>multi-user.target
+</p><div class="language-bash highlight"><span class="filename">Bash</span><pre><span></span><code><span id="__span-3-1"><span class="o">[</span>Unit<span class="o">]</span>
+</span><span id="__span-3-2"><span class="nv">Description</span><span class="o">=</span>Prometheus<span class="w"> </span>exporter<span class="w"> </span><span class="k">for</span><span class="w"> </span>machine<span class="w"> </span>metrics
+</span><span id="__span-3-3">
+</span><span id="__span-3-4"><span class="o">[</span>Service<span class="o">]</span>
+</span><span id="__span-3-5"><span class="nv">Restart</span><span class="o">=</span>always
+</span><span id="__span-3-6"><span class="nv">User</span><span class="o">=</span>prometheus
+</span><span id="__span-3-7"><span class="nv">ExecStart</span><span class="o">=</span>/usr/local/bin/node_exporter
+</span><span id="__span-3-8"><span class="nv">ExecReload</span><span class="o">=</span>/bin/kill<span class="w"> </span>-HUP<span class="w"> </span><span class="nv">$MAINPID</span>
+</span><span id="__span-3-9"><span class="nv">TimeoutStopSec</span><span class="o">=</span>20s
+</span><span id="__span-3-10"><span class="nv">SendSIGKILL</span><span class="o">=</span>no
+</span><span id="__span-3-11">
+</span><span id="__span-3-12"><span class="o">[</span>Install<span class="o">]</span>
+</span><span id="__span-3-13"><span class="nv">WantedBy</span><span class="o">=</span>multi-user.target
 </span></code></pre></div><p></p>
 <p><small>Lalu Mulai dan Aktifkan Servicenya.</small>
-</p><div class="language-bash highlight"><span class="filename">Bash</span><pre><span></span><code><span id="__span-8-1">sudo<span class="w"> </span>systemctl<span class="w"> </span>daemon-reload
-</span><span id="__span-8-2">sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>prometheus
-</span><span id="__span-8-3">sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>prometheus
-</span><span id="__span-8-4">sudo<span class="w"> </span>systemctl<span class="w"> </span>status<span class="w"> </span>prometheus
+</p><div class="language-bash highlight"><span class="filename">Bash</span><pre><span></span><code><span id="__span-4-1">sudo<span class="w"> </span>systemctl<span class="w"> </span>daemon-reload
+</span><span id="__span-4-2">sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>node_exporter
+</span><span id="__span-4-3">sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>node_exporter
+</span><span id="__span-4-4">sudo<span class="w"> </span>systemctl<span class="w"> </span>status<span class="w"> </span>node_exporter
 </span></code></pre></div><p></p>
 <p><small>Pastikan statusnya <strong>active (running)</strong> seperti ini:</small></p>
 <figure style="text-align: center; ">
-  <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="/assets/images/status-prometheus.png" data-desc-position="bottom"><img src="/assets/images/status-prometheus.png" alt="Status Prometheus – monitoring overview" width="100%" style="border-radius: 8px; box-shadow: 2px 2px 5px rgba(255, 143, 0, 0.2);"></a>
-  <figcaption>Status Prometheus – monitoring overview</figcaption>
+  <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="/assets/images/status-node-exporter.png" data-desc-position="bottom"><img src="/assets/images/status-node-exporter.png" alt="Status Node Exporter – monitoring overview" width="100%" style="border-radius: 8px; box-shadow: 2px 2px 5px rgba(255, 143, 0, 0.2);"></a>
+  <figcaption>Status Node Exporter – monitoring overview</figcaption>
 </figure>
 
-<p><small>Buka Web Console Prometheus dengan menggunakan IP Address dengan port :9090 (<em>default port</em>).<br>
-Masuk ke <strong>Status -&gt; Targets</strong>, dan pastikan prometheus endpoint state up seperti gambar di bawah ini:<br>
-<code>http://&lt;server_ip&gt;:9090/targets</code></small></p>
-<figure style="text-align: center; ">
-  <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="/assets/images/web-console-prometheus.png" data-desc-position="bottom"><img src="/assets/images/web-console-prometheus.png" alt="Tampilan Web Console Prometheus" width="100%" style="border-radius: 8px; box-shadow: 2px 2px 5px rgba(255, 143, 0, 0.2);"></a>
-  <figcaption>Tampilan Web Console Prometheus</figcaption>
-</figure>
-
-<!-- <small></small>
-<div class="language-bash highlight"><span class="filename">Bash</span><pre><span></span><code><span id="__span-9-1">
+<h2 id="menghubungkan-node-exporter-ke-prometheus">Menghubungkan Node Exporter ke Prometheus<a class="headerlink" href="#menghubungkan-node-exporter-ke-prometheus" title="Permanent link">¶</a></h2>
+<p><small>
+Sekarang kita akan mencoba menghubungkan node exporter agar dapat di scrape oleh prometheus. Nantinya Kita bisa melihat metriks-metrik yang dikumpulkan oleh node exporter. Untuk antisipasi kegagalam, pertama Kita cadagkan dulu konfigurasi default dari prometheus. Kemudian buat file konfigurasi yang baru.</small>
+</p><div class="language-bash highlight"><span class="filename">Bash</span><pre><span></span><code><span id="__span-5-1">sudo<span class="w"> </span>mv<span class="w"> </span>/etc/prometheus/prometheus.yml<span class="w"> </span>/etc/prometheus/prometheus.yml.bak
+</span><span id="__span-5-2">sudo<span class="w"> </span>nano<span class="w"> </span>/etc/prometheus/prometheus.yml
+</span></code></pre></div><p></p>
+<p><small>Salin dan tempelkan baris konfigurasi di bawah ini:</small>
+</p><div class="language-bash highlight"><span class="filename">Bash</span><pre><span></span><code><span id="__span-6-1">global:
+</span><span id="__span-6-2"><span class="w">  </span>scrape_interval:<span class="w"> </span>15s<span class="w">        </span><span class="c1"># default untuk semua job (interval pengambilan data)</span>
+</span><span id="__span-6-3"><span class="w">  </span>evaluation_interval:<span class="w"> </span>15s<span class="w">    </span><span class="c1"># evaluasi aturan setiap 15 detik</span>
+</span><span id="__span-6-4">
+</span><span id="__span-6-5">scrape_configs:
+</span><span id="__span-6-6"><span class="w">  </span>-<span class="w"> </span>job_name:<span class="w"> </span><span class="s2">"prometheus"</span>
+</span><span id="__span-6-7"><span class="w">    </span>static_configs:
+</span><span id="__span-6-8"><span class="w">      </span>-<span class="w"> </span>targets:<span class="w"> </span><span class="o">[</span><span class="s2">"localhost:9090"</span><span class="o">]</span>
+</span><span id="__span-6-9">
+</span><span id="__span-6-10"><span class="w">  </span>-<span class="w"> </span>job_name:<span class="w"> </span><span class="s2">"node-exporter-localhost"</span>
+</span><span id="__span-6-11"><span class="w">    </span>scrape_interval:<span class="w"> </span>5s<span class="w">       </span><span class="c1"># override khusus Node Exporter (optional)</span>
+</span><span id="__span-6-12"><span class="w">    </span>static_configs:
+</span><span id="__span-6-13"><span class="w">      </span>-<span class="w"> </span>targets:<span class="w"> </span><span class="o">[</span><span class="s2">"localhost:9100"</span><span class="o">]</span>
 </span></code></pre></div>
-
-1. <small>**Persiapan server** — (Update, Upgrade, Atur Zona Waktu).</small>
-1. <small>**Prometheus** (server) — menyimpan metrics, job scraping.</small>
-2. <small>**node_exporter** (di setiap host yang ingin dimonitor) — expose metrics host di :9100.</small>
-3. <small>**Grafana** — visualisasi + import dashboard Prometheus (sebagai datasource).</small>
-
-<small></small> -->
+<small>Kemudian restart service prometheus.</small>
+<div class="language-bash highlight"><span class="filename">Bash</span><pre><span></span><code><span id="__span-7-1">sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>prometheus
+</span></code></pre></div><p></p>
+<p><small>
+Kemudian Kita cek konfigurasinya sudah berhasil apa belum.<br>
+Masuk ke Prometheus <strong>Web Console -&gt; Status -&gt; Targets</strong>. Pastikan Endpoint sudah bertambah <strong>node-exporter-localhost</strong> dan berstate <strong><em>up</em></strong> seperti ini:</small></p>
+<figure style="text-align: center; ">
+  <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="/assets/images/endpoint-node-exporter.png" data-desc-position="bottom"><img src="/assets/images/endpoint-node-exporter.png" alt="Endpoint Node Exporter" width="100%" style="border-radius: 8px; box-shadow: 2px 2px 5px rgba(255, 143, 0, 0.2);"></a>
+  <figcaption>Endpoint Node Exporter</figcaption>
+</figure>
 
 
 

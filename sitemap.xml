@@ -2,46 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://documentation.dwialim.web.id/</loc>
-         <lastmod>2025-09-03</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://documentation.dwialim.web.id/overview/</loc>
-         <lastmod>2025-09-03</lastmod>
+         <lastmod>2025-09-04</lastmod>
+    </url>
+    <url>
+         <loc>https://documentation.dwialim.web.id/get-started/fck-nat/</loc>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://documentation.dwialim.web.id/get-started/grafana/</loc>
-         <lastmod>2025-09-03</lastmod>
+         <lastmod>2025-09-04</lastmod>
+    </url>
+    <url>
+         <loc>https://documentation.dwialim.web.id/get-started/cloud-watch/metrics/</loc>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://documentation.dwialim.web.id/setup/overview/</loc>
-         <lastmod>2025-09-03</lastmod>
+         <lastmod>2025-09-04</lastmod>
+    </url>
+    <url>
+         <loc>https://documentation.dwialim.web.id/setup/configuration/authentikasi-prometheus/</loc>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://documentation.dwialim.web.id/setup/configuration/grafana/</loc>
-         <lastmod>2025-09-03</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://documentation.dwialim.web.id/setup/configuration/prometheus/</loc>
-         <lastmod>2025-09-03</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://documentation.dwialim.web.id/setup/installation/grafana/</loc>
-         <lastmod>2025-09-03</lastmod>
+         <lastmod>2025-09-04</lastmod>
+    </url>
+    <url>
+         <loc>https://documentation.dwialim.web.id/setup/installation/node-exporter/</loc>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://documentation.dwialim.web.id/setup/installation/overview/</loc>
-         <lastmod>2025-09-03</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://documentation.dwialim.web.id/setup/installation/prometheus/</loc>
-         <lastmod>2025-09-03</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://documentation.dwialim.web.id/setup/start-services/grafana/</loc>
-         <lastmod>2025-09-03</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://documentation.dwialim.web.id/setup/start-services/prometheus/</loc>
-         <lastmod>2025-09-03</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
 </urlset>
