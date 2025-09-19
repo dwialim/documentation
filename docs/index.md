@@ -6,10 +6,6 @@ Tujuannya agar pengguna dapat dengan mudah memahami alur setup dan memaksimalkan
 
 ---
 
-<!-- - Lihat [Install]({{ links.grafana_install }}) untuk menjalankan service. -->
-- Lihat [Install]({{ link("grafana_install") }}) untuk menjalankan service.
-- [Install Grafana]({{ link("grafana_install") }})
-
 ## ✨ Kelebihan
 
 Beberapa keunggulan dari project ini antara lain:
@@ -35,13 +31,13 @@ Beberapa keunggulan dari project ini antara lain:
 
 ```bash
 docs/
-├── home                 # Main content
+├── home                    # Main content
 ├── setup/
 │   ├── installation/       # Installation
 │   ├── configuration/      # Configuration system
 │   └── start-services/     # Start services / system
 ├── get-started/            # Get started
-│   └── index
 └── (ongoing...)
 ```
+
 <!-- ├──, └──, │ -->

@@ -7,14 +7,6 @@ Petunjuk berikut memulai proses `grafana-server` sebagai pengguna `grafana`, yan
 Jika Anda menginstal dengan APT repository atau `.deb` package, Anda dapat menjalankan server menggunakan systemd atau init.d. Jika Anda menginstal berkas biner `.tar.gz`, jalankan berkas biner tersebut.")
 }}
 
-<!-- {{ h1("Topik ini berisi petunjuk untuk memulai")}}<br>
-{{ h2("Topik ini berisi petunjuk untuk memulai")}}<br>
-{{ h3("Topik ini berisi petunjuk untuk memulai")}}<br>
-{{ h4("Topik ini berisi petunjuk untuk memulai")}}<br>
-{{ h5("Topik ini berisi petunjuk untuk memulai")}}<br>
-{{ h6("Topik ini berisi petunjuk untuk memulai")}}<br>
-{{ small("Topik ini berisi petunjuk untuk memulai")}} -->
-
 ## Linux
 {{ small("Sub-bagian berikut menjelaskan tiga metode untuk memulai dan memulai ulang server Grafana: dengan systemd, initd, atau dengan langsung menjalankan binernya. Anda hanya perlu mengikuti satu set instruksi, tergantung pada konfigurasi mesin Anda.") }}
 

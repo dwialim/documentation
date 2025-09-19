@@ -5,28 +5,28 @@
       
       
       
-        <link rel="canonical" href="https://documentation.dwialim.web.id/documentation/setup/configuration/grafana/">
+        <link rel="canonical" href="https://documentation.dwialim.web.id/documentation/get-started/fck-nat/">
       
       
-        <link rel="prev" href="../authentikasi-prometheus/">
+        <link rel="prev" href="../grafana/">
       
       
-        <link rel="next" href="../prometheus/">
+        <link rel="next" href="../cloud-watch/metrics/">
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
     
     
       
-        <title>Grafana - Documentation</title>
+        <title>fck-nat - Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -51,16 +51,16 @@
       
     
     
-      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-  <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
             html.glightbox-open { overflow: initial; height: 100%; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
@@ -89,7 +89,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#configure-grafana" class="md-skip">
+        <a href="#sabar-ya-masih-ongoing" class="md-skip">
           Skip to content
         </a>
       
@@ -105,7 +105,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Documentation" class="md-header__button md-logo" aria-label="Documentation" data-md-component="logo">
+    <a href="../.." title="Documentation" class="md-header__button md-logo" aria-label="Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
@@ -125,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Grafana
+              fck-nat
             
           </span>
         </div>
@@ -229,7 +229,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Documentation" class="md-nav__button md-logo" aria-label="Documentation" data-md-component="logo">
+    <a href="../.." title="Documentation" class="md-nav__button md-logo" aria-label="Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
@@ -247,7 +247,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -266,20 +266,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2">
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -295,7 +293,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Setup
@@ -347,7 +345,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../installation/grafana/" class="md-nav__link">
+      <a href="../../setup/installation/grafana/" class="md-nav__link">
         
   
   
@@ -370,7 +368,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../installation/prometheus/" class="md-nav__link">
+      <a href="../../setup/installation/prometheus/" class="md-nav__link">
         
   
   
@@ -393,7 +391,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../installation/node-exporter/" class="md-nav__link">
+      <a href="../../setup/installation/node-exporter/" class="md-nav__link">
         
   
   
@@ -421,20 +419,18 @@
                 
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2">
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
@@ -450,7 +446,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             Configuration
@@ -464,7 +460,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../authentikasi-prometheus/" class="md-nav__link">
+      <a href="../../setup/configuration/authentikasi-prometheus/" class="md-nav__link">
         
   
   
@@ -484,32 +480,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Grafana
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../setup/configuration/grafana/" class="md-nav__link">
         
   
   
@@ -520,125 +494,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#configuration-file-location" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configuration file location
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Configuration file location">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#linux" class="md-nav__link">
-    <span class="md-ellipsis">
-      Linux
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#docker" class="md-nav__link">
-    <span class="md-ellipsis">
-      Docker
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#grafana-cloud" class="md-nav__link">
-    <span class="md-ellipsis">
-      Grafana Cloud
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#remove-comments-in-the-ini-files" class="md-nav__link">
-    <span class="md-ellipsis">
-      Remove comments in the .ini files
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configuration-options" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configuration options
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Configuration options">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#server" class="md-nav__link">
-    <span class="md-ellipsis">
-      [server]
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="[server]">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#http_addr" class="md-nav__link">
-    <span class="md-ellipsis">
-      http_addr
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#next-steps" class="md-nav__link">
-    <span class="md-ellipsis">
-      Next steps
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -651,7 +506,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../prometheus/" class="md-nav__link">
+      <a href="../../setup/configuration/prometheus/" class="md-nav__link">
         
   
   
@@ -720,7 +575,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../start-services/grafana/" class="md-nav__link">
+      <a href="../../setup/start-services/grafana/" class="md-nav__link">
         
   
   
@@ -743,7 +598,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../start-services/prometheus/" class="md-nav__link">
+      <a href="../../setup/start-services/prometheus/" class="md-nav__link">
         
   
   
@@ -778,18 +633,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3">
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -805,7 +662,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Get started
@@ -819,7 +676,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../get-started/grafana/" class="md-nav__link">
+      <a href="../grafana/" class="md-nav__link">
         
   
   
@@ -839,10 +696,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../get-started/fck-nat/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -853,6 +719,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -903,7 +770,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../get-started/cloud-watch/metrics/" class="md-nav__link">
+      <a href="../cloud-watch/metrics/" class="md-nav__link">
         
   
   
@@ -954,113 +821,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#configuration-file-location" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configuration file location
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Configuration file location">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#linux" class="md-nav__link">
-    <span class="md-ellipsis">
-      Linux
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#docker" class="md-nav__link">
-    <span class="md-ellipsis">
-      Docker
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#grafana-cloud" class="md-nav__link">
-    <span class="md-ellipsis">
-      Grafana Cloud
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#remove-comments-in-the-ini-files" class="md-nav__link">
-    <span class="md-ellipsis">
-      Remove comments in the .ini files
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configuration-options" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configuration options
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Configuration options">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#server" class="md-nav__link">
-    <span class="md-ellipsis">
-      [server]
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="[server]">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#http_addr" class="md-nav__link">
-    <span class="md-ellipsis">
-      http_addr
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#next-steps" class="md-nav__link">
-    <span class="md-ellipsis">
-      Next steps
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1075,47 +835,7 @@
 
 
 
-<h1 id="configure-grafana">Configure Grafana<a class="headerlink" href="#configure-grafana" title="Permanent link">¶</a></h1>
-<details class="note" open="open">
-<summary><strong>CATATAN</strong></summary>
-<p>Setelah menambahkan opsi khusus, <a href="https://grafana.com/docs/grafana/latest/setup-grafana/configure-grafana/#remove-comments-in-the-ini-files">hapus komentar</a> pada bagian yang relevan dari berkas konfigurasi.</p>
-<p>Mulai ulang Grafana agar perubahan diterapkan.</p>
-</details>
-<p>Grafana adalah platform open-source untuk monitoring dan observability yang memungkinkan Anda memvisualisasikan metrics, logs, dan traces dari berbagai sumber data.</p>
-<h3 id="configuration-file-location">Configuration file location<a class="headerlink" href="#configuration-file-location" title="Permanent link">¶</a></h3>
-<blockquote>
-<p>Pengaturan default untuk instans Grafana disimpan dalam berkas <code>&lt;WORKING DIRECTORY&gt;/conf/defaults.ini</code>. Jangan ubah berkas ini.</p>
-<p>Tergantung pada OS Anda, berkas konfigurasi kustom Anda dapat berupa berkas <code>&lt;WORKING DIRECTORY&gt;/conf/custom.ini</code> atau berkas <code>/usr/local/etc/grafana/grafana.ini</code>. Anda dapat menggunakan jalur konfigurasi kustom dengan opsi <code>--config</code>.</p>
-</blockquote>
-<h4 id="linux">Linux<a class="headerlink" href="#linux" title="Permanent link">¶</a></h4>
-<blockquote>
-<p>Jika Anda menginstal Grafana menggunakan paket deb atau RPM, maka berkas konfigurasi Anda terletak di <code>/etc/grafana/grafana.ini</code> dan <code>custom.ini</code> terpisah tidak digunakan. Jalur ini ditentukan dalam skrip Grafana init.d menggunakan opsi <code>--config</code>.</p>
-</blockquote>
-<h4 id="docker">Docker<a class="headerlink" href="#docker" title="Permanent link">¶</a></h4>
-<blockquote>
-<p>Lihat <a href="https://grafana.com/docs/grafana/latest/setup-grafana/configure-docker/">Konfigurasi image Docker Grafana</a> untuk informasi tentang variabel lingkungan, penyimpanan persisten, dan pembuatan image Docker kustom.</p>
-</blockquote>
-<h4 id="grafana-cloud">Grafana Cloud<a class="headerlink" href="#grafana-cloud" title="Permanent link">¶</a></h4>
-<blockquote>
-<p>Tidak ada berkas konfigurasi lokal untuk Grafana Cloud stacks, tetapi banyak dari pengaturan ini masih dapat dikonfigurasi. Untuk mengedit pengaturan yang dapat dikonfigurasi, buka tiket dukungan.</p>
-</blockquote>
-<h3 id="remove-comments-in-the-ini-files">Remove comments in the .ini files<a class="headerlink" href="#remove-comments-in-the-ini-files" title="Permanent link">¶</a></h3>
-<p>Grafana menggunakan titik koma (;) untuk memberi komentar pada baris dalam INI file. Untuk menghapus komentar pada suatu baris, hapus titik koma (;) dari awal baris tersebut.</p>
-<p>Grafana mengabaikan semua baris konfigurasi yang dimulai dengan titik koma.</p>
-<p>Misalnya:
-</p><div class="language-bash highlight"><span class="filename">ini</span><pre><span></span><code><span id="__span-0-1"><span class="p">;</span><span class="nv">http_port</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">3000</span>
-</span></code></pre></div><p></p>
-<h3 id="configuration-options">Configuration options<a class="headerlink" href="#configuration-options" title="Permanent link">¶</a></h3>
-<h4 id="server"><code>[server]</code><a class="headerlink" href="#server" title="Permanent link">¶</a></h4>
-<h5 id="http_addr"><code>http_addr</code><a class="headerlink" href="#http_addr" title="Permanent link">¶</a></h5>
-<blockquote>
-<p>Host tempat server mendengarkan. Jika mesin Anda memiliki lebih dari satu network interface, Anda dapat menggunakan pengaturan ini untuk mengekspos layanan Grafana hanya pada satu network interface dan tidak menyediakannya pada interface lain, seperti loopback interface. Nilai kosong setara dengan menetapkan nilai ke 0.0.0.0, yang berarti layanan Grafana terikat ke semua interface.</p>
-<p>Di environments yang menggunakan network address translation (NAT), pastikan Anda menggunakan alamat network interface dan bukan final public address; jika tidak, Anda mungkin melihat kesalahan seperti bind: cannot assign requested address in the logs.</p>
-</blockquote>
-<h2 id="next-steps">Next steps<a class="headerlink" href="#next-steps" title="Permanent link">¶</a></h2>
-<ul>
-<li><a href="/setup/start-services/grafana/">Start the Grafana server</a></li>
-</ul>
+<h1 id="sabar-ya-masih-ongoing">Sabar ya... masih Ongoing... <img alt="😄" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f604.svg" title=":smile:"><a class="headerlink" href="#sabar-ya-masih-ongoing" title="Permanent link">¶</a></h1>
 
 
 
@@ -1164,10 +884,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
       
     
   

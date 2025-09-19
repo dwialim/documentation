@@ -1,5 +1,5 @@
 site_name: Documentation   # Judul utama dokumentasi (tampil di navbar dan tab browser)
-site_url: https://documentation.dwialim.web.id
+site_url: https://documentation.dwialim.web.id/
 
 theme:
   palette:                 # Konfigurasi tema light/dark mode
@@ -25,24 +25,23 @@ theme:
 
 nav:                       # Struktur navigasi (menu sidebar/topbar)
   - Home: &home index.md
-  # - Overview: &main overview.md
   - Setup:
-    # - Overview: &setup setup/index.md
     - Installation:
-      # - Overview: &installation setup/installation/index.md
       - Grafana: &grafana_install setup/installation/grafana.md
       - Prometheus: &prometheus_install setup/installation/prometheus.md
+      - Node Exporter: &node_exporter_install setup/installation/node-exporter.md
     - Configuration:
-      # - Overview: &configuration setup/configuration/index.md
-      - grafana-config: &grafana_config setup/configuration/grafana.md
-      - prometheus-config: &prometheus_config setup/configuration/prometheus.md
+      - Authentikasi Prometheus: setup/configuration/authentikasi-prometheus.md
+      - Grafana: &grafana_config setup/configuration/grafana.md
+      - Prometheus: &prometheus_config setup/configuration/prometheus.md
     - Start services:
-      # - Overview: &start_services setup/start-services/index.md
       - Grafana: &grafana_service setup/start-services/grafana.md
       - Prometheus: &prometheus_service setup/start-services/prometheus.md
   - Get started:
-    # - Overview: &get_started get-started/index.md
     - Grafana: &grafana_get_started get-started/grafana.md
+    - fck-nat: get-started/fck-nat.md
+    - Cloud Watch:
+      - Monitoring Instance : get-started/cloud-watch/monitoring-instance.md
     # - prometheus-start: implementation/grafana.md
 
 markdown_extensions:       # Ekstensi tambahan untuk memperkaya Markdown
@@ -60,8 +59,9 @@ markdown_extensions:       # Ekstensi tambahan untuk memperkaya Markdown
   - pymdownx.tilde         # Subscript ~teks~ dan strikethrough ~~teks~~
   - pymdownx.emoji:        # Dukungan emoji
       # emoji_index: !!python/name:materialx.emoji.twemoji
+      # emoji_generator: !!python/name:materialx.emoji.to_svg
       emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
   # --- Code blocks ---
   - pymdownx.highlight:    # Highlight code dengan pygments
@@ -85,10 +85,34 @@ markdown_extensions:       # Ekstensi tambahan untuk memperkaya Markdown
   - toc:
       permalink: true
 
+  # --- Images ---
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
+
 plugins:
   # - awesome-pages
   - search                  # Plugin search default MkDocs
   - macros                  # Plugin untuk pakai macro Jinja ({{ ... }}) di markdown
+
+  # --- https://github.com/blueswen/mkdocs-glightbox?tab=readme-ov-file ---
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+      skip_classes:
+        - custom-skip-class-name
+      auto_themed: false
+      auto_caption: false
+      caption_position: bottom
+      background: white
+      shadow: true
+      manual: false
   # - macros:
   #     module_name: main.py
 
@@ -104,6 +128,20 @@ extra_css:
   - stylesheets/extra.css   # CSS custom tambahan (untuk styling sendiri)
 
 extra:
+  assets:
+    images:
+      status_prometheus: assets/images/status-prometheus.png
+      web_console_prometheus: assets/images/web-console-prometheus.png
+
+      status_node_exporter: assets/images/status-node-exporter.png
+      endpoint_node_exporter: assets/images/endpoint-node-exporter.png
+
+      cloud_watch_agent_server_policy: assets/images/cloud-watch-agent-server-policy.png
+      status_amazone_cloud_watch_agent: assets/images/status-amazone-cloud-watch-agent.png
+      metric_cwagent: assets/images/metric-cwagent.png
+      metric_instanceid: assets/images/metric-instanceid.png
+      create_widget_mem_used_percent: assets/images/create-widget-mem_used_percent.png
+
   links:
     home: *home
     grafana_install: *grafana_install
@@ -114,6 +152,9 @@ extra:
     prometheus_install: *prometheus_install
     prometheus_config: *prometheus_config
     prometheus_service: *prometheus_service
+
+    node_exporter_install: *node_exporter_install
+
   # overviews:
   #   main: *main
   #   setup: *setup

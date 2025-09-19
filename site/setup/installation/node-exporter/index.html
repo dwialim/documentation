@@ -5,13 +5,13 @@
       
       
       
-        <link rel="canonical" href="https://documentation.dwialim.web.id/documentation/setup/configuration/grafana/">
+        <link rel="canonical" href="https://documentation.dwialim.web.id/documentation/setup/installation/node-exporter/">
       
       
-        <link rel="prev" href="../authentikasi-prometheus/">
+        <link rel="prev" href="../prometheus/">
       
       
-        <link rel="next" href="../prometheus/">
+        <link rel="next" href="../../configuration/authentikasi-prometheus/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -19,7 +19,7 @@
     
     
       
-        <title>Grafana - Documentation</title>
+        <title>Node Exporter - Documentation</title>
       
     
     
@@ -89,7 +89,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#configure-grafana" class="md-skip">
+        <a href="#panduan-install-node-exporter" class="md-skip">
           Skip to content
         </a>
       
@@ -125,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Grafana
+              Node Exporter
             
           </span>
         </div>
@@ -306,18 +306,20 @@
                 
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1">
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
         
           
           <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
@@ -333,7 +335,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_1">
             <span class="md-nav__icon md-icon"></span>
             Installation
@@ -347,7 +349,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../installation/grafana/" class="md-nav__link">
+      <a href="../grafana/" class="md-nav__link">
         
   
   
@@ -370,106 +372,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../installation/prometheus/" class="md-nav__link">
+      <a href="../prometheus/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     Prometheus
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../installation/node-exporter/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Node Exporter
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Configuration
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_2">
-            <span class="md-nav__icon md-icon"></span>
-            Configuration
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../authentikasi-prometheus/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Authentikasi Prometheus
     
   </span>
   
@@ -501,7 +409,7 @@
   
   
   <span class="md-ellipsis">
-    Grafana
+    Node Exporter
     
   </span>
   
@@ -514,7 +422,7 @@
   
   
   <span class="md-ellipsis">
-    Grafana
+    Node Exporter
     
   </span>
   
@@ -537,99 +445,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#configuration-file-location" class="md-nav__link">
+  <a href="#apa-itu-node-exporter" class="md-nav__link">
     <span class="md-ellipsis">
-      Configuration file location
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Configuration file location">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#linux" class="md-nav__link">
-    <span class="md-ellipsis">
-      Linux
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#docker" class="md-nav__link">
-    <span class="md-ellipsis">
-      Docker
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#grafana-cloud" class="md-nav__link">
-    <span class="md-ellipsis">
-      Grafana Cloud
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#remove-comments-in-the-ini-files" class="md-nav__link">
-    <span class="md-ellipsis">
-      Remove comments in the .ini files
+      Apa itu Node Exporter?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuration-options" class="md-nav__link">
+  <a href="#fungsi-node-exporter" class="md-nav__link">
     <span class="md-ellipsis">
-      Configuration options
+      Fungsi Node Exporter
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Configuration options">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#server" class="md-nav__link">
-    <span class="md-ellipsis">
-      [server]
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="[server]">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#http_addr" class="md-nav__link">
-    <span class="md-ellipsis">
-      http_addr
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#next-steps" class="md-nav__link">
+  <a href="#cara-kerja-node-exporter" class="md-nav__link">
     <span class="md-ellipsis">
-      Next steps
+      Cara Kerja Node Exporter
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-node-exporter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Node Exporter
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#menghubungkan-node-exporter-ke-prometheus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Menghubungkan Node Exporter ke Prometheus
     </span>
   </a>
   
@@ -644,6 +498,52 @@
 
               
             
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2">
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Configuration
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Configuration
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
               
                 
   
@@ -651,7 +551,53 @@
   
   
     <li class="md-nav__item">
-      <a href="../prometheus/" class="md-nav__link">
+      <a href="../../configuration/authentikasi-prometheus/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Authentikasi Prometheus
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration/grafana/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Grafana
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration/prometheus/" class="md-nav__link">
         
   
   
@@ -961,99 +907,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#configuration-file-location" class="md-nav__link">
+  <a href="#apa-itu-node-exporter" class="md-nav__link">
     <span class="md-ellipsis">
-      Configuration file location
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Configuration file location">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#linux" class="md-nav__link">
-    <span class="md-ellipsis">
-      Linux
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#docker" class="md-nav__link">
-    <span class="md-ellipsis">
-      Docker
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#grafana-cloud" class="md-nav__link">
-    <span class="md-ellipsis">
-      Grafana Cloud
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#remove-comments-in-the-ini-files" class="md-nav__link">
-    <span class="md-ellipsis">
-      Remove comments in the .ini files
+      Apa itu Node Exporter?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuration-options" class="md-nav__link">
+  <a href="#fungsi-node-exporter" class="md-nav__link">
     <span class="md-ellipsis">
-      Configuration options
+      Fungsi Node Exporter
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Configuration options">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#server" class="md-nav__link">
-    <span class="md-ellipsis">
-      [server]
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="[server]">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#http_addr" class="md-nav__link">
-    <span class="md-ellipsis">
-      http_addr
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#next-steps" class="md-nav__link">
+  <a href="#cara-kerja-node-exporter" class="md-nav__link">
     <span class="md-ellipsis">
-      Next steps
+      Cara Kerja Node Exporter
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-node-exporter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Node Exporter
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#menghubungkan-node-exporter-ke-prometheus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Menghubungkan Node Exporter ke Prometheus
     </span>
   </a>
   
@@ -1075,47 +967,99 @@
 
 
 
-<h1 id="configure-grafana">Configure Grafana<a class="headerlink" href="#configure-grafana" title="Permanent link">¶</a></h1>
-<details class="note" open="open">
-<summary><strong>CATATAN</strong></summary>
-<p>Setelah menambahkan opsi khusus, <a href="https://grafana.com/docs/grafana/latest/setup-grafana/configure-grafana/#remove-comments-in-the-ini-files">hapus komentar</a> pada bagian yang relevan dari berkas konfigurasi.</p>
-<p>Mulai ulang Grafana agar perubahan diterapkan.</p>
-</details>
-<p>Grafana adalah platform open-source untuk monitoring dan observability yang memungkinkan Anda memvisualisasikan metrics, logs, dan traces dari berbagai sumber data.</p>
-<h3 id="configuration-file-location">Configuration file location<a class="headerlink" href="#configuration-file-location" title="Permanent link">¶</a></h3>
-<blockquote>
-<p>Pengaturan default untuk instans Grafana disimpan dalam berkas <code>&lt;WORKING DIRECTORY&gt;/conf/defaults.ini</code>. Jangan ubah berkas ini.</p>
-<p>Tergantung pada OS Anda, berkas konfigurasi kustom Anda dapat berupa berkas <code>&lt;WORKING DIRECTORY&gt;/conf/custom.ini</code> atau berkas <code>/usr/local/etc/grafana/grafana.ini</code>. Anda dapat menggunakan jalur konfigurasi kustom dengan opsi <code>--config</code>.</p>
-</blockquote>
-<h4 id="linux">Linux<a class="headerlink" href="#linux" title="Permanent link">¶</a></h4>
-<blockquote>
-<p>Jika Anda menginstal Grafana menggunakan paket deb atau RPM, maka berkas konfigurasi Anda terletak di <code>/etc/grafana/grafana.ini</code> dan <code>custom.ini</code> terpisah tidak digunakan. Jalur ini ditentukan dalam skrip Grafana init.d menggunakan opsi <code>--config</code>.</p>
-</blockquote>
-<h4 id="docker">Docker<a class="headerlink" href="#docker" title="Permanent link">¶</a></h4>
-<blockquote>
-<p>Lihat <a href="https://grafana.com/docs/grafana/latest/setup-grafana/configure-docker/">Konfigurasi image Docker Grafana</a> untuk informasi tentang variabel lingkungan, penyimpanan persisten, dan pembuatan image Docker kustom.</p>
-</blockquote>
-<h4 id="grafana-cloud">Grafana Cloud<a class="headerlink" href="#grafana-cloud" title="Permanent link">¶</a></h4>
-<blockquote>
-<p>Tidak ada berkas konfigurasi lokal untuk Grafana Cloud stacks, tetapi banyak dari pengaturan ini masih dapat dikonfigurasi. Untuk mengedit pengaturan yang dapat dikonfigurasi, buka tiket dukungan.</p>
-</blockquote>
-<h3 id="remove-comments-in-the-ini-files">Remove comments in the .ini files<a class="headerlink" href="#remove-comments-in-the-ini-files" title="Permanent link">¶</a></h3>
-<p>Grafana menggunakan titik koma (;) untuk memberi komentar pada baris dalam INI file. Untuk menghapus komentar pada suatu baris, hapus titik koma (;) dari awal baris tersebut.</p>
-<p>Grafana mengabaikan semua baris konfigurasi yang dimulai dengan titik koma.</p>
-<p>Misalnya:
-</p><div class="language-bash highlight"><span class="filename">ini</span><pre><span></span><code><span id="__span-0-1"><span class="p">;</span><span class="nv">http_port</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">3000</span>
+<h1 id="panduan-install-node-exporter">Panduan Install Node Exporter<a class="headerlink" href="#panduan-install-node-exporter" title="Permanent link">¶</a></h1>
+<h2 id="apa-itu-node-exporter">Apa itu Node Exporter?<a class="headerlink" href="#apa-itu-node-exporter" title="Permanent link">¶</a></h2>
+<p><small>
+Node Exporter adalah <strong>agen monitoring</strong> yang digunakan untuk mengumpulkan metrics hardware dan sistem operasi. Prometheus sendiri hanya bertindak sebagai <strong>server monitoring</strong> dan tidak bisa langsung mengumpulkan data dari sistem. Node Exporter lah yang akan mengumpulkan data, lalu Prometheus akan menarik (scrape) data tersebut. data metriks yang dikumpulkan seperti: CPU usage, Memori (RAM), Disk usage, Load average, Network traffic, Proses yang berjalan</small></p>
+<h2 id="fungsi-node-exporter">Fungsi Node Exporter<a class="headerlink" href="#fungsi-node-exporter" title="Permanent link">¶</a></h2>
+<p><small>
+Node Exporter meng-<strong>expose</strong> berbagai metrics terkait host (server) dalam format HTTP endpoint (<code>:9100/metrics</code>), supaya Prometheus bisa <strong>scrape</strong> data tersebut secara periodik.</small></p>
+<h2 id="cara-kerja-node-exporter">Cara Kerja Node Exporter<a class="headerlink" href="#cara-kerja-node-exporter" title="Permanent link">¶</a></h2>
+<ol>
+<li><small>Install Node Exporter di server target (Linux biasanya).</small></li>
+<li><small>Node Exporter jalan sebagai service dan expose metrics di port <code>9100</code>.</small></li>
+<li><small>Prometheus melakukan scrape ke <code>http://&lt;server_ip&gt;:9100/metrics</code>.</small></li>
+<li><small>Data disimpan Prometheus dan bisa divisualisasikan di Grafana.</small></li>
+</ol>
+<h2 id="install-node-exporter">Install Node Exporter<a class="headerlink" href="#install-node-exporter" title="Permanent link">¶</a></h2>
+<p><small>Sama seperti prometheus, Kita akan menginstall Node Exporter dari <a href="https://prometheus.io/download/#node_exporter">Pre-Compile Binary</a> yang sudah disediakan.</small>
+</p><div class="language-bash highlight"><span class="filename">Bash</span><pre><span></span><code><span id="__span-0-1"><span class="nb">cd</span><span class="w"> </span>/tmp
+</span><span id="__span-0-2">
+</span><span id="__span-0-3">wget<span class="w"> </span>https://github.com/prometheus/node_exporter/releases/download/v1.9.1/node_exporter-1.9.1.linux-amd64.tar.gz
+</span><span id="__span-0-4">
+</span><span id="__span-0-5">tar<span class="w"> </span>-xvzf<span class="w"> </span>node_exporter-*.*-amd64.tar.gz
+</span><span id="__span-0-6"><span class="nb">cd</span><span class="w"> </span>node_exporter-*.*-amd64
+</span></code></pre></div>
+<small>
+Kemudian pindahkan binari node exporter ke <code>/usr/local/bin</code>. Dan agar lebih aman, buat juga user dan group yang akan digunakan untuk menjalankan <strong>Node Exporter</strong>. Terakhir ubah kepemilikan direktorinya.</small>
+<div class="language-bash highlight"><span class="filename">Bash</span><pre><span></span><code><span id="__span-1-1">sudo<span class="w"> </span>useradd<span class="w"> </span>-rs<span class="w"> </span>/bin/false<span class="w"> </span>node_exporter
+</span><span id="__span-1-2">
+</span><span id="__span-1-3">sudo<span class="w"> </span>mv<span class="w"> </span>node_exporter<span class="w"> </span>/usr/local/bin/
+</span><span id="__span-1-4">sudo<span class="w"> </span>chown<span class="w"> </span>node_exporter:node_exporter<span class="w"> </span>/usr/local/bin/node_exporter
 </span></code></pre></div><p></p>
-<h3 id="configuration-options">Configuration options<a class="headerlink" href="#configuration-options" title="Permanent link">¶</a></h3>
-<h4 id="server"><code>[server]</code><a class="headerlink" href="#server" title="Permanent link">¶</a></h4>
-<h5 id="http_addr"><code>http_addr</code><a class="headerlink" href="#http_addr" title="Permanent link">¶</a></h5>
-<blockquote>
-<p>Host tempat server mendengarkan. Jika mesin Anda memiliki lebih dari satu network interface, Anda dapat menggunakan pengaturan ini untuk mengekspos layanan Grafana hanya pada satu network interface dan tidak menyediakannya pada interface lain, seperti loopback interface. Nilai kosong setara dengan menetapkan nilai ke 0.0.0.0, yang berarti layanan Grafana terikat ke semua interface.</p>
-<p>Di environments yang menggunakan network address translation (NAT), pastikan Anda menggunakan alamat network interface dan bukan final public address; jika tidak, Anda mungkin melihat kesalahan seperti bind: cannot assign requested address in the logs.</p>
-</blockquote>
-<h2 id="next-steps">Next steps<a class="headerlink" href="#next-steps" title="Permanent link">¶</a></h2>
-<ul>
-<li><a href="/setup/start-services/grafana/">Start the Grafana server</a></li>
-</ul>
+<p><small>Buat konfigurasi node exporter di Systemd. Ini bertujuan agar node exporter berjalan sebagai service.</small>
+</p><div class="language-bash highlight"><span class="filename">Bash</span><pre><span></span><code><span id="__span-2-1">sudo<span class="w"> </span>nano<span class="w"> </span>/etc/systemd/system/node_exporter.service
+</span></code></pre></div><p></p>
+<p><small>Salin dan tempel baris kode di bawah ini:</small>
+</p><div class="language-bash highlight"><span class="filename">Bash</span><pre><span></span><code><span id="__span-3-1"><span class="o">[</span>Unit<span class="o">]</span>
+</span><span id="__span-3-2"><span class="nv">Description</span><span class="o">=</span>Prometheus<span class="w"> </span>exporter<span class="w"> </span><span class="k">for</span><span class="w"> </span>machine<span class="w"> </span>metrics
+</span><span id="__span-3-3">
+</span><span id="__span-3-4"><span class="o">[</span>Service<span class="o">]</span>
+</span><span id="__span-3-5"><span class="nv">Restart</span><span class="o">=</span>always
+</span><span id="__span-3-6"><span class="nv">User</span><span class="o">=</span>prometheus
+</span><span id="__span-3-7"><span class="nv">ExecStart</span><span class="o">=</span>/usr/local/bin/node_exporter
+</span><span id="__span-3-8"><span class="nv">ExecReload</span><span class="o">=</span>/bin/kill<span class="w"> </span>-HUP<span class="w"> </span><span class="nv">$MAINPID</span>
+</span><span id="__span-3-9"><span class="nv">TimeoutStopSec</span><span class="o">=</span>20s
+</span><span id="__span-3-10"><span class="nv">SendSIGKILL</span><span class="o">=</span>no
+</span><span id="__span-3-11">
+</span><span id="__span-3-12"><span class="o">[</span>Install<span class="o">]</span>
+</span><span id="__span-3-13"><span class="nv">WantedBy</span><span class="o">=</span>multi-user.target
+</span></code></pre></div><p></p>
+<p><small>Lalu Mulai dan Aktifkan Servicenya.</small>
+</p><div class="language-bash highlight"><span class="filename">Bash</span><pre><span></span><code><span id="__span-4-1">sudo<span class="w"> </span>systemctl<span class="w"> </span>daemon-reload
+</span><span id="__span-4-2">sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>node_exporter
+</span><span id="__span-4-3">sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>node_exporter
+</span><span id="__span-4-4">sudo<span class="w"> </span>systemctl<span class="w"> </span>status<span class="w"> </span>node_exporter
+</span></code></pre></div><p></p>
+<p><small>Pastikan statusnya <strong>active (running)</strong> seperti ini:</small></p>
+<figure style="text-align: center; ">
+  <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="/assets/images/status-node-exporter.png" data-desc-position="bottom"><img src="/assets/images/status-node-exporter.png" alt="Status Node Exporter – monitoring overview" width="100%" style="border-radius: 8px; box-shadow: 2px 2px 5px rgba(255, 143, 0, 0.2);"></a>
+  <figcaption>Status Node Exporter – monitoring overview</figcaption>
+</figure>
+
+<h2 id="menghubungkan-node-exporter-ke-prometheus">Menghubungkan Node Exporter ke Prometheus<a class="headerlink" href="#menghubungkan-node-exporter-ke-prometheus" title="Permanent link">¶</a></h2>
+<p><small>
+Sekarang kita akan mencoba menghubungkan node exporter agar dapat di scrape oleh prometheus. Nantinya Kita bisa melihat metriks-metrik yang dikumpulkan oleh node exporter. Untuk antisipasi kegagalam, pertama Kita cadagkan dulu konfigurasi default dari prometheus. Kemudian buat file konfigurasi yang baru.</small>
+</p><div class="language-bash highlight"><span class="filename">Bash</span><pre><span></span><code><span id="__span-5-1">sudo<span class="w"> </span>mv<span class="w"> </span>/etc/prometheus/prometheus.yml<span class="w"> </span>/etc/prometheus/prometheus.yml.bak
+</span><span id="__span-5-2">sudo<span class="w"> </span>nano<span class="w"> </span>/etc/prometheus/prometheus.yml
+</span></code></pre></div><p></p>
+<p><small>Salin dan tempelkan baris konfigurasi di bawah ini:</small>
+</p><div class="language-bash highlight"><span class="filename">Bash</span><pre><span></span><code><span id="__span-6-1">global:
+</span><span id="__span-6-2"><span class="w">  </span>scrape_interval:<span class="w"> </span>15s<span class="w">        </span><span class="c1"># default untuk semua job (interval pengambilan data)</span>
+</span><span id="__span-6-3"><span class="w">  </span>evaluation_interval:<span class="w"> </span>15s<span class="w">    </span><span class="c1"># evaluasi aturan setiap 15 detik</span>
+</span><span id="__span-6-4">
+</span><span id="__span-6-5">scrape_configs:
+</span><span id="__span-6-6"><span class="w">  </span>-<span class="w"> </span>job_name:<span class="w"> </span><span class="s2">"prometheus"</span>
+</span><span id="__span-6-7"><span class="w">    </span>static_configs:
+</span><span id="__span-6-8"><span class="w">      </span>-<span class="w"> </span>targets:<span class="w"> </span><span class="o">[</span><span class="s2">"localhost:9090"</span><span class="o">]</span>
+</span><span id="__span-6-9">
+</span><span id="__span-6-10"><span class="w">  </span>-<span class="w"> </span>job_name:<span class="w"> </span><span class="s2">"node-exporter-localhost"</span>
+</span><span id="__span-6-11"><span class="w">    </span>scrape_interval:<span class="w"> </span>5s<span class="w">       </span><span class="c1"># override khusus Node Exporter (optional)</span>
+</span><span id="__span-6-12"><span class="w">    </span>static_configs:
+</span><span id="__span-6-13"><span class="w">      </span>-<span class="w"> </span>targets:<span class="w"> </span><span class="o">[</span><span class="s2">"localhost:9100"</span><span class="o">]</span>
+</span></code></pre></div>
+<small>Kemudian restart service prometheus.</small>
+<div class="language-bash highlight"><span class="filename">Bash</span><pre><span></span><code><span id="__span-7-1">sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>prometheus
+</span></code></pre></div><p></p>
+<p><small>
+Kemudian Kita cek konfigurasinya sudah berhasil apa belum.<br>
+Masuk ke Prometheus <strong>Web Console -&gt; Status -&gt; Targets</strong>. Pastikan Endpoint sudah bertambah <strong>node-exporter-localhost</strong> dan berstate <strong><em>up</em></strong> seperti ini:</small></p>
+<figure style="text-align: center; ">
+  <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="/assets/images/endpoint-node-exporter.png" data-desc-position="bottom"><img src="/assets/images/endpoint-node-exporter.png" alt="Endpoint Node Exporter" width="100%" style="border-radius: 8px; box-shadow: 2px 2px 5px rgba(255, 143, 0, 0.2);"></a>
+  <figcaption>Endpoint Node Exporter</figcaption>
+</figure>
+
+<p>NEWs</p>
 
 
 

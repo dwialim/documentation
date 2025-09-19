@@ -32,3 +32,8 @@ Code block foreground, background and line highlight colors are defined via:
 .highlight .sb {
 	color: #0FF1CE;
 }
+
+.md-typeset figcaption {
+	margin: 0.5em auto;
+	font-size: 12px;
+}
